@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="#8bc34a"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logosecond"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/uname"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:background="@drawable/edittextbackground"
+                android:layout_height="60dp"
+                android:hint="Username"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/unamez"
+                ></EditText>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arroba"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:background="@drawable/edittextbackground"
+                android:layout_height="60dp"
+                android:hint="Email"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/emz"
+                ></EditText>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/password"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edittextbackground"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/pwz"
+                ></EditText>
+
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/password"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edittextbackground"
+                android:layout_height="60dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/pw2z"
+                ></EditText>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:padding="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="I Agree the tearm and condition and privacy policy">
+
+
+            </CheckBox>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:background="#1e5c2b"
+            android:id="@+id/signupbtnz"
+            >
+
+        </Button>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Already Have an Account ?Login"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="20dp"
+            ></TextView>
+    </LinearLayout>
+</ScrollView>
