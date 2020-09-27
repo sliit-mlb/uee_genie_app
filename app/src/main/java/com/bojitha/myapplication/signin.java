@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bojitha.myapplication.Home.Home;
 
 public class signin extends AppCompatActivity {
     EditText ed1,ed2;
@@ -43,11 +44,16 @@ public class signin extends AppCompatActivity {
                 if(uname.equals("bojitha") && pw.equals("123")){
 
                     Toast.makeText(signin.this, "Login Sucess", Toast.LENGTH_LONG).show();
+
+
                 }else{
                     Toast.makeText(signin.this, "Invalid Username or Password", Toast.LENGTH_LONG).show();
 
 
+
                 }
+                Intent ii = new Intent(signin.this, Home.class);
+                startActivity(ii);
             }
         });
 
