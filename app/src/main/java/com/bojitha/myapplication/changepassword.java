@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class changepassword extends AppCompatActivity {
+public class  changepassword extends AppCompatActivity {
     Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
