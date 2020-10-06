@@ -32,4 +32,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
 
     implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+
+    //implementation 'com.android.support:design:25.1.0' //Library need for material tabs
+    implementation "androidx.recyclerview:recyclerview:1.1.0" //Library need for recycler view
 }
