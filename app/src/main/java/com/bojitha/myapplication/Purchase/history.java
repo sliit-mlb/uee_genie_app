@@ -9,15 +9,15 @@ import android.widget.Button;
 
 import com.bojitha.myapplication.R;
 
-public class bank extends AppCompatActivity {
+public class history extends AppCompatActivity {
 Button b1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bank);
+        setContentView(R.layout.activity_history);
 
 
-        b1 = findViewById(R.id.button5);
+        b1 = findViewById(R.id.button13);
 
 
         b1.setOnClickListener(
@@ -25,7 +25,7 @@ Button b1;
                     @Override
                     public void onClick(View view) {
 
-                        Intent ii = new Intent(bank.this, otp.class);
+                        Intent ii = new Intent(history.this, filer.class);
                         startActivity(ii);
                     }
                 });

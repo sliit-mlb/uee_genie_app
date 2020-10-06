@@ -35,59 +35,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="20dp"
-            >
+            android:padding="20dp">
+
+            <EditText
+
+                android:id="@+id/unamez"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edittextbackground"
+                android:gravity="center"
+                android:hint="Username"
+                android:textSize="20sp"
+                android:textStyle="bold"></EditText>
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/uname"
                 android:layout_gravity="center"
-                />
-
-            <EditText
-
-                android:layout_width="match_parent"
-                android:background="@drawable/edittextbackground"
-                android:layout_height="60dp"
-                android:hint="Username"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:id="@+id/unamez"
-                ></EditText>
+                android:src="@drawable/uname" />
 
         </LinearLayout>
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp"></Space>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="20dp"
-            >
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/arroba"
-                android:layout_gravity="center"
-                />
-
-            <EditText
-
-                android:layout_width="match_parent"
-                android:background="@drawable/edittextbackground"
-                android:layout_height="60dp"
-                android:hint="Email"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:id="@+id/emz"
-                ></EditText>
-
-        </LinearLayout>
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp"></Space>
@@ -149,6 +121,30 @@
                 android:id="@+id/pw2z"
                 ></EditText>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <EditText
+
+                    android:id="@+id/emz"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/edittextbackground"
+                    android:gravity="center"
+                    android:hint="Email"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></EditText>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arroba" />
+
+            </LinearLayout>
 
 
         </LinearLayout>

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home.Home"></activity>
+        <activity android:name=".Purchase.otp"></activity>
+        <activity android:name=".Purchase.bank" />
+        <activity android:name=".Purchase.ez" />
+        <activity android:name=".Purchase.card" />
+        <activity android:name=".Purchase.paymentmain" />
+        <activity android:name=".Home.Home" />
         <activity android:name=".changepassword" />
         <activity android:name=".signup" />
         <activity android:name=".forgettwo" />

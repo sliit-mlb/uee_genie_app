@@ -19,6 +19,7 @@ public class signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         b1 = findViewById(R.id.signupbtnz);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -113,15 +113,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="110dp"
-        android:layout_height="87dp"
-        android:layout_marginBottom="24dp"
-
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="111dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/arrow" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
