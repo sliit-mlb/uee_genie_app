@@ -3,4 +3,15 @@
     <string name="samplez"><u>Forgot Password</u>.</string>
     <string name="samplez2"><u>or Sign In With</u>.</string>
     <string name="samplez3">Dont Have an Account <u> Sign Up</u>.</string>
+    <string name="selectBill">Select which biller(s) you want to pay</string>
+    <string name="verifyLoginPasswordMessage">Enter your Login Password</string>
+    <string name="verifyLoginPasswordTextHint">Enter Password</string>
+    <string name="editPersonalDetails">Edit Personal Details</string>
+    <string name="epdFirstName">First Name</string>
+    <string name="epdLastName">LastName</string>
+    <string name="epdDob">Date of birth</string>
+    <string name="epdPerAddress">Permanent Address</string>
+    <string name="epdEmail">Email Address</string>
+    <string name="btnSave">Save</string>
+    <string name="action_menu">Main menu</string>
 </resources>
