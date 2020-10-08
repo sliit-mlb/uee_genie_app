@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -37,8 +38,10 @@ public class VerifyBills extends AppCompatActivity {
         next1 = findViewById(R.id.actionBtnNext1);
         amt = findViewById(R.id.txtAmount);
 
-        Toolbar toolbarForQRCode = findViewById(R.id.verify_bills_toolbar);
-        setSupportActionBar(toolbarForQRCode);
+        Toolbar toolbarForVerifyBills = findViewById(R.id.verify_bills_toolbar);
+        toolbarForVerifyBills.setTitle("Pay Bill");
+        toolbarForVerifyBills.setTitleTextColor(Color.parseColor("#ffffff"));
+        setSupportActionBar(toolbarForVerifyBills);
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 

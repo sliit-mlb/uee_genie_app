@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QRScan.PayBill"></activity>
+        <activity android:name=".Common.Settings"></activity>
+        <activity android:name=".QRScan.PayBill" />
         <activity android:name=".EditPersonalDetails.OtpForEditPersonalDetails" />
         <activity android:name=".MakePayment.ConfirmBill" />
         <activity android:name=".MakePayment.SelectWallet" />
@@ -22,7 +23,7 @@
         <activity android:name=".EditPersonalDetails.EditPersonalDetails" />
         <activity android:name=".QRScan.ScanQRCode" />
         <activity android:name=".MakePayment.SelectBills" />
-        <activity android:name=".Purchase.otp"></activity>
+        <activity android:name=".Purchase.otp" />
         <activity android:name=".Purchase.bank" />
         <activity android:name=".Purchase.ez" />
         <activity android:name=".Purchase.card" />
@@ -31,7 +32,8 @@
         <activity android:name=".Purchase.history" />
         <activity android:name=".Purchase.resetwallet" />
         <activity android:name=".Purchase.wallet1" />
-        <activity android:name=".Home.Home" />
+        <activity android:name=".Home.Home"
+            android:noHistory="true"/>
         <activity android:name=".changepassword" />
         <activity android:name=".signup" />
         <activity android:name=".forgettwo" />
@@ -44,7 +46,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".QRScan.CaptureActivity"
             android:screenOrientation="fullSensor"

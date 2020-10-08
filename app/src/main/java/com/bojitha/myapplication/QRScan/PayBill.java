@@ -1,6 +1,7 @@
 package com.bojitha.myapplication.QRScan;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -48,6 +49,8 @@ public class PayBill extends AppCompatActivity {
         amount.setText("187.50");
 
         Toolbar toolbarForPayBill = findViewById(R.id.toolbarPayBill);
+        toolbarForPayBill.setTitle("Pay Bill From QR");
+        toolbarForPayBill.setTitleTextColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbarForPayBill);
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);

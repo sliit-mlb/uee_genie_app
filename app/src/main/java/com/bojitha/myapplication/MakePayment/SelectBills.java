@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,8 +36,10 @@ public class SelectBills extends AppCompatActivity {
 
         next = findViewById(R.id.actionBtnNext);
 
-        Toolbar toolbarForQRCode = findViewById(R.id.bills_toolbar);
-        setSupportActionBar(toolbarForQRCode);
+        Toolbar toolbarForSelectBills = findViewById(R.id.bills_toolbar);
+        toolbarForSelectBills.setTitle("Pay Bill");
+        toolbarForSelectBills.setTitleTextColor(Color.parseColor("#ffffff"));
+        setSupportActionBar(toolbarForSelectBills);
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 

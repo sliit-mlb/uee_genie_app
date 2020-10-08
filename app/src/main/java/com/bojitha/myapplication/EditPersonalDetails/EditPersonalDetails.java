@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -37,6 +38,8 @@ public class EditPersonalDetails extends AppCompatActivity {
         loading.setVisibility(View.GONE);
 
         Toolbar toolbarForEditPersonalDetails = findViewById(R.id.editPersonalDetailsToolbar);
+        toolbarForEditPersonalDetails.setTitle("Edit Personal Details");
+        toolbarForEditPersonalDetails.setTitleTextColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbarForEditPersonalDetails);
 
         fName.setText("Nuwan");

@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -34,6 +35,8 @@ public class SelectWallet extends AppCompatActivity {
         next = findViewById(R.id.actBtnNext);
 
         Toolbar toolbarForSelectWallet = findViewById(R.id.select_wallet_toolbar);
+        toolbarForSelectWallet.setTitle("Pay Bill");
+        toolbarForSelectWallet.setTitleTextColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbarForSelectWallet);
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);

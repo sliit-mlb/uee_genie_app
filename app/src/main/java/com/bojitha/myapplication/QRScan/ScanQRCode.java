@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -19,6 +20,8 @@ public class ScanQRCode extends AppCompatActivity {
         setContentView(R.layout.activity_scan_q_r_code);
 
         Toolbar toolbarForQRCode = findViewById(R.id.toolbar_for_scanQR);
+        toolbarForQRCode.setTitle("SR Scan");
+        toolbarForQRCode.setTitleTextColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbarForQRCode);
 
         scanCode();

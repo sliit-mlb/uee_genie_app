@@ -1,11 +1,14 @@
 package com.bojitha.myapplication.Home;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.bojitha.myapplication.MakePayment.SelectBills;
 import com.bojitha.myapplication.Purchase.history;
@@ -17,6 +20,10 @@ import com.bojitha.myapplication.R;
 public class Home extends AppCompatActivity {
 
     ImageButton billerType, payment, paymentOption, wallet, scan, billers;
+
+    private static final int TIME_INTERVAL = 2000;
+    private long mBackPressed;
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,5 +60,19 @@ public class Home extends AppCompatActivity {
                 startActivity(addPayment);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed(){
+        if (mBackPressed + TIME_INTERVAL > System.currentTimeMillis()) {
+            super.onBackPressed();
+            Intent a = new Intent(Intent.ACTION_MAIN);
+            a.addCategory(Intent.CATEGORY_HOME);
+            a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(a);
+        } else {
+            Toast.makeText(getBaseContext(), "Click two times to close an activity",    Toast.LENGTH_SHORT).show();
+        }
+        mBackPressed = System.currentTimeMillis();
     }
 }

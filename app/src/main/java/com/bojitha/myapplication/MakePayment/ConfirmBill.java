@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -42,6 +43,8 @@ public class ConfirmBill extends AppCompatActivity {
         loading.setVisibility(View.GONE);
 
         Toolbar toolbarForConfirmBill = findViewById(R.id.confirmBillToolbar);
+        toolbarForConfirmBill.setTitle("Pay Bill");
+        toolbarForConfirmBill.setTitleTextColor(Color.parseColor("#ffffff"));
         setSupportActionBar(toolbarForConfirmBill);
 
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
