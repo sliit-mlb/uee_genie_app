@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bojitha.myapplication">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature android:name="android.hardware.camera2.autofocus" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,11 +14,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".QRScan.PayBill"></activity>
+        <activity android:name=".EditPersonalDetails.OtpForEditPersonalDetails" />
+        <activity android:name=".MakePayment.ConfirmBill" />
+        <activity android:name=".MakePayment.SelectWallet" />
+        <activity android:name=".MakePayment.VerifyBills" />
+        <activity android:name=".EditPersonalDetails.EditPersonalDetails" />
+        <activity android:name=".QRScan.ScanQRCode" />
+        <activity android:name=".MakePayment.SelectBills" />
         <activity android:name=".Purchase.otp"></activity>
         <activity android:name=".Purchase.bank" />
         <activity android:name=".Purchase.ez" />
         <activity android:name=".Purchase.card" />
         <activity android:name=".Purchase.paymentmain" />
+        <activity android:name=".Purchase.filer" />
+        <activity android:name=".Purchase.history" />
+        <activity android:name=".Purchase.resetwallet" />
+        <activity android:name=".Purchase.wallet1" />
         <activity android:name=".Home.Home" />
         <activity android:name=".changepassword" />
         <activity android:name=".signup" />
@@ -27,6 +44,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".QRScan.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <meta-data
             android:name="preloaded_fonts"

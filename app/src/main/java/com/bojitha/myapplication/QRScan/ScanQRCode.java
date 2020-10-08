@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.bojitha.myapplication.MakePayment.SelectBills;
 import com.bojitha.myapplication.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -30,7 +29,7 @@ public class ScanQRCode extends AppCompatActivity {
         intentIntegrator.setCaptureActivity(CaptureActivity.class);
         intentIntegrator.setOrientationLocked(false);
         intentIntegrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-        intentIntegrator.setPrompt("Scanning Code");
+        intentIntegrator.setPrompt("Align QR code with frame to connect");
         intentIntegrator.initiateScan();
     }
 
@@ -39,7 +38,7 @@ public class ScanQRCode extends AppCompatActivity {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if(result != null){
             if(result.getContents() != null){
-                Intent makePaymentIntent = new Intent(this, SelectBills.class);
+                Intent makePaymentIntent = new Intent(ScanQRCode.this, PayBill.class);
                 startActivity(makePaymentIntent);
             }else{
                 Toast.makeText(this,"Scan Again",Toast.LENGTH_LONG).show();

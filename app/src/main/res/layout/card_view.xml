@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/walletAlias"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="My BOC"
+            android:textColor="@color/text_color"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/selectIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/walletNumber"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:text="2252 5555 4444 1111"
+        android:textColor="@color/text_color"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/walletImage"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        app:srcCompat="@drawable/atm_card" />
+
+
+</LinearLayout>

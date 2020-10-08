@@ -17,7 +17,7 @@ Button b1;
         setContentView(R.layout.activity_bank);
 
 
-        b1 = findViewById(R.id.button5);
+        b1 = findViewById(R.id.button10);
 
 
         b1.setOnClickListener(
