@@ -8,16 +8,17 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bojitha.myapplication.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ez extends AppCompatActivity {
-Button b1;
+FloatingActionButton b1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ez);
 
 
-        b1 = findViewById(R.id.button12);
+        b1 = findViewById(R.id.floatingActionButton53);
 
 
         b1.setOnClickListener(

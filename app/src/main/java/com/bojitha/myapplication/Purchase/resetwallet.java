@@ -8,9 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bojitha.myapplication.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class resetwallet extends AppCompatActivity {
-Button b1;
+FloatingActionButton b1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +19,7 @@ Button b1;
 
 
 
-        b1 = findViewById(R.id.button14);
+        b1 = findViewById(R.id.floatingActionButton54);
 
 
         b1.setOnClickListener(
