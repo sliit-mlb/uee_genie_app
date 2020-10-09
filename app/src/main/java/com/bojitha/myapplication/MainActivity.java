@@ -1,7 +1,6 @@
 package com.bojitha.myapplication;
 
-import
-        androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         b1 = findViewById(R.id.signinbtn);
-        b1.setOnClickListener
-                (new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -30,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         b2 = findViewById(R.id.signupbtn);
-        b2.setOnClickListener(
-                new View.OnClickListener() {
+        b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

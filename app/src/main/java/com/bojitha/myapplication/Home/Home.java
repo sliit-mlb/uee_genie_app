@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.bojitha.myapplication.MakePayment.SelectBills;
 import com.bojitha.myapplication.Purchase.history;
 import com.bojitha.myapplication.Purchase.resetwallet;
+import com.bojitha.myapplication.Purchase.viewwallet;
 import com.bojitha.myapplication.QRScan.ScanQRCode;
 import com.bojitha.myapplication.Purchase.paymentmain;
 import com.bojitha.myapplication.R;
@@ -27,10 +28,10 @@ import com.bojitha.myapplication.signin;
 import com.bojitha.myapplication.vouchers.voucher;
 
 public class Home extends AppCompatActivity {
-    ImageButton fingerprint,addbiller,payment;
+    //ImageButton fingerprint,addbiller,payment;
     Button b1;
 
-    ImageButton billerType, payment, paymentOption, wallet, scan, billers;
+    ImageButton addbiller, payment, paymentOption, wallet, scan, fingerprint;
 
     private static final int TIME_INTERVAL = 2000;
     private long mBackPressed;
@@ -42,10 +43,15 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         fingerprint = findViewById(R.id.imageButton21);
-
         addbiller = findViewById(R.id.imageButton11);
+        payment = (ImageButton)findViewById(R.id.imageButton18);
+        scan = (ImageButton)findViewById(R.id.imageButton20);
+        paymentOption = (ImageButton) findViewById(R.id.imageButton17);
+        //billerType = findViewById(R.id.imageButton11);
+        //billers = findViewById(R.id.imageButton21);
+        wallet = findViewById(R.id.imageButton19);
 
-        b1 = findViewById(R.id.button);
+        b1 = findViewById(R.id.buttonCp);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +79,7 @@ public class Home extends AppCompatActivity {
         });
 
 
-        payment = findViewById(R.id.imageButton18);
+        /*payment = findViewById(R.id.imageButton18);
 
         payment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,16 +87,7 @@ public class Home extends AppCompatActivity {
                 Intent ii = new Intent(Home.this,Billers.class);
                 startActivity(ii);
             }
-        });
-
-
-
-        payment = (ImageButton)findViewById(R.id.imageButton18);
-        scan = (ImageButton)findViewById(R.id.imageButton20);
-        paymentOption = (ImageButton) findViewById(R.id.imageButton17);
-        billerType = findViewById(R.id.imageButton11);
-        billers = findViewById(R.id.imageButton21);
-        wallet = findViewById(R.id.imageButton19);
+        });*/
 
         payment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +110,14 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent addPayment = new Intent(Home.this, paymentmain.class);
                 startActivity(addPayment);
+            }
+        });
+
+        wallet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent viewWallet = new Intent(Home.this, viewwallet.class);
+                startActivity(viewWallet);
             }
         });
     }

@@ -14,7 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".vouchers.voucher"></activity>
+        <activity android:name=".Googlelogin"></activity>
+        <activity android:name=".FbLogin" />
+        <activity android:name=".Purchase.viewwallet" />
+        <activity android:name=".Common.Settings" />
+        <activity android:name=".vouchers.voucher" />
         <activity android:name=".billertype.addbiller" />
         <activity android:name=".billertype.billertypehome" />
         <activity android:name=".enablefingerprint.setfingerprint" />
@@ -24,11 +28,11 @@
         <activity android:name=".Home.EditBiller" />
         <activity android:name=".Home.BillerDetails" />
         <activity android:name=".Home.Billers" />
-        <activity android:name=".Home.Home" />
-        <activity android:name=".Common.Settings"></activity>
         <activity android:name=".QRScan.PayBill" />
         <activity android:name=".EditPersonalDetails.OtpForEditPersonalDetails" />
-        <activity android:name=".MakePayment.ConfirmBill" />
+        <activity
+            android:name=".MakePayment.ConfirmBill"
+            android:noHistory="true" />
         <activity android:name=".MakePayment.SelectWallet" />
         <activity android:name=".MakePayment.VerifyBills" />
         <activity android:name=".EditPersonalDetails.EditPersonalDetails" />
@@ -43,8 +47,7 @@
         <activity android:name=".Purchase.history" />
         <activity android:name=".Purchase.resetwallet" />
         <activity android:name=".Purchase.wallet1" />
-        <activity android:name=".Home.Home"
-            android:noHistory="true"/>
+        <activity android:name=".Home.Home" />
         <activity android:name=".changepassword" />
         <activity android:name=".signup" />
         <activity android:name=".forgettwo" />

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".signin">
+    tools:context=".Googlelogin">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,18 +17,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Sign in"
+            android:text="Google Login"
             android:textSize="30dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#fff"
-            android:background="#8bc34a"
-            ></TextView>
+            android:background="#db4a39"/>
 
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/logosecond"
+            android:src="@drawable/googlez"
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
             />
@@ -48,7 +47,6 @@
                 />
 
             <EditText
-
                 android:layout_width="match_parent"
                 android:background="@drawable/edittextbackground"
                 android:layout_height="60dp"
@@ -56,14 +54,13 @@
                 android:textSize="20sp"
                 android:gravity="center"
                 android:textStyle="bold"
-
-                android:id="@+id/unamez"
-                ></EditText>
+                android:id="@+id/unamezfbgoogle"/>
 
         </LinearLayout>
+
         <Space
             android:layout_width="match_parent"
-            android:layout_height="10dp"></Space>
+            android:layout_height="10dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,90 +84,36 @@
                 android:textSize="20sp"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:id="@+id/pwz"
-                ></EditText>
+                android:id="@+id/pwzfbgoogle"/>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal" android:padding="20dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="Remember Me">
-
-
-            </RadioButton>
-            <Space
-                android:layout_width="40dp"
-                android:layout_height="match_parent"></Space>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/samplez"
-                android:textSize="15dp"
-                android:id="@+id/fogetz"
-                android:gravity="center"
-                android:textStyle="bold"
-                ></TextView>
-        </LinearLayout>
         <Button
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Login"
             android:textSize="24sp"
             android:textColor="#fff"
             android:layout_gravity="center"
-            android:background="#1e5c2b"
-            android:id="@+id/loginbtn"
+            android:background="#db4a39"
+            android:id="@+id/loginbtnfbgoogle"
             >
 
         </Button>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/samplez2"
-            android:textSize="15dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:textStyle="bold"
-            ></TextView>
-
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal" android:padding="20dp">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/fb"
-                android:id="@+id/loginfb"></ImageView>
-            <Space
-                android:layout_width="200dp"
-                android:layout_height="match_parent"></Space>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/googlez"
-                android:id="@+id/logingoogle"></ImageView>
-        </LinearLayout>
-        <TextView
-            android:id="@+id/gotozx"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/samplez3"
-            android:textSize="15dp"
+            android:textSize="18sp"
+            android:text="Go Back"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textStyle="bold"
-            android:padding="20dp"
-            ></TextView>
+            android:id="@+id/backbtnfbgoogle"/>
+
+
     </LinearLayout>
+
 </ScrollView>
