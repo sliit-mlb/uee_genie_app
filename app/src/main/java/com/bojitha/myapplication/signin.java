@@ -46,7 +46,8 @@ public class signin extends AppCompatActivity {
                 if(uname.equals("bojitha") && pw.equals("123")){
 
                     Toast.makeText(signin.this, "Login Sucess", Toast.LENGTH_LONG).show();
-
+                    Intent ii = new Intent(signin.this, Home.class);
+                    startActivity(ii);
 
                 }else{
                     Toast.makeText(signin.this, "Invalid Username or Password", Toast.LENGTH_LONG).show();
@@ -54,8 +55,7 @@ public class signin extends AppCompatActivity {
 
 
                 }
-                Intent ii = new Intent(signin.this, Home.class);
-                startActivity(ii);
+
             }
         });
 

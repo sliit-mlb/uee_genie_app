@@ -14,6 +14,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".vouchers.voucher"></activity>
+        <activity android:name=".billertype.addbiller" />
+        <activity android:name=".billertype.billertypehome" />
+        <activity android:name=".enablefingerprint.setfingerprint" />
+        <activity android:name=".enablefingerprint.Touch" />
+        <activity android:name=".enablefingerprint.pin" />
+        <activity android:name=".enablefingerprint.enablefingerprint" />
+        <activity android:name=".Home.EditBiller" />
+        <activity android:name=".Home.BillerDetails" />
+        <activity android:name=".Home.Billers" />
+        <activity android:name=".Home.Home" />
         <activity android:name=".Common.Settings"></activity>
         <activity android:name=".QRScan.PayBill" />
         <activity android:name=".EditPersonalDetails.OtpForEditPersonalDetails" />

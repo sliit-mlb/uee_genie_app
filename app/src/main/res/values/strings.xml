@@ -28,4 +28,7 @@
     <string name="btnCancel">Cancel</string>
     <string name="sampleNumber">0775651247</string>
     <string name="selectWallet">Select a wallet</string>
+
+
+    <string name="action_settings">Settings</string>
 </resources>
