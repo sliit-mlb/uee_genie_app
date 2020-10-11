@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".Purchase.paymentmain">
 
+    <include
+        android:id="@+id/toolbarPaymentMain"
+        layout="@layout/tool_bar"/>
+
     <Button
         android:id="@+id/button5"
         android:layout_width="303dp"
@@ -51,17 +55,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="55dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="123dp"
@@ -96,20 +89,6 @@
         app:srcCompat="@drawable/bank1" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="445dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="4dp"
-        android:background="#1e5c2b"
-        android:text="         ADD PAYMENT TYPE"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="451dp"
         android:layout_height="53dp"
@@ -119,7 +98,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarOtp" />
 
     <TextView
         android:id="@+id/textView4"

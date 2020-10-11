@@ -8,6 +8,10 @@
     android:background="#FFFFFF"
     tools:context=".enablefingerprint.pin">
 
+    <include
+        android:id="@+id/toolbarPIN"
+        layout="@layout/tool_bar"/>
+
     <Button
         android:id="@+id/button6"
         android:layout_width="227dp"
@@ -25,14 +29,13 @@
         android:id="@+id/editTextNumber"
         android:layout_width="128dp"
         android:layout_height="45dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView34"
-        app:layout_constraintVertical_bias="0.637" />
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -44,23 +47,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241"
         app:srcCompat="@drawable/capturefinger" />
-
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="405dp"
-        android:layout_height="59dp"
-        android:layout_gravity="center"
-        android:autoText="false"
-        android:background="#1e5c2b"
-        android:gravity="center_vertical"
-        android:text="        GENIE"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001" />
 
     <TextView
         android:id="@+id/textView51"
@@ -92,31 +78,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
-
-    <ImageButton
-        android:id="@+id/imageButton25"
-        android:layout_width="38dp"
-        android:layout_height="42dp"
-        android:tint="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@android:drawable/ic_menu_agenda" />
-
-    <ImageButton
-        android:id="@+id/imageButton26"
-        android:layout_width="38dp"
-        android:layout_height="42dp"
-        android:tint="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@android:drawable/ic_notification_clear_all" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

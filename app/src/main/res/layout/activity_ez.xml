@@ -6,31 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Purchase.ez">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="442dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="0dp"
-
-        android:background="#1e5c2b"
-        android:text="         ADD PAYMENT TYPE"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+    <include
+        android:id="@+id/toolbarEz"
+        layout="@layout/tool_bar"/>
 
     <TextView
         android:id="@+id/textView13"
@@ -44,7 +22,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarEz" />
 
     <TextView
         android:id="@+id/textView14"

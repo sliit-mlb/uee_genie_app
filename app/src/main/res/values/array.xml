@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="type">
+        <item>Online Shopping</item>
+        <item>Opticians</item>
+        <item>Finance</item>
+        <item>Real Estate</item>
+        <item>Telephone</item>
+        <item>Water Board</item>
+        <item>Electricity Board</item>
+    </string-array>
+
+    <string-array name="value">
+        <item>Dialog - CDMA and Broadband</item>
+        <item>Dialog - Mobile</item>
+        <item>Etisalat</item>
+        <item>Hutch</item>
+        <item>Lanka Bell</item>
+        <item>Mobitel</item>
+        <item>SLT</item>
+    </string-array>
+
+    <string-array name="banks">
+        <item>Bank of Ceylon</item>
+        <item>Commercial Bank</item>
+        <item>Sampath Bank</item>
+        <item>Nation Trust Bank</item>
+        <item>Seylan Bank</item>
+        <item>Hatton National Bank</item>
+        <item>National Saving Bank</item>
+    </string-array>
+
+</resources>

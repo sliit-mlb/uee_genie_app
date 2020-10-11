@@ -6,21 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Purchase.bank">
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="442dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="0dp"
-
-        android:background="#1e5c2b"
-        android:text="         ADD PAYMENT TYPE"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/toolbarBank"
+        layout="@layout/tool_bar"/>
 
     <TextView
         android:id="@+id/textView26"
@@ -33,17 +21,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarBank" />
 
     <TextView
         android:id="@+id/textView27"
@@ -73,6 +51,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="SELECT"
+        android:entries="@array/banks"
         android:textColor="@color/design_default_color_on_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
@@ -142,8 +121,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
+        android:hint="eg:- My Bank Account"
         android:inputType="textPersonName"
-        android:text="eg:- My Bank Account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"

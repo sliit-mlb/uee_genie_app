@@ -6,30 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Purchase.history">
 
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="442dp"
-        android:layout_height="59dp"
-        android:background="#1e5c2b"
-        android:text="                  HISTORY"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+    <include
+        android:id="@+id/toolbarHistory"
+        layout="@layout/tool_bar"/>
 
     <TextView
         android:id="@+id/textView38"
@@ -37,13 +16,13 @@
         android:layout_height="26dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="71dp"
         android:text="My Dialog Mobile"
         android:textColor="@color/design_default_color_on_secondary"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarHistory" />
 
     <TextView
         android:id="@+id/textView40"
@@ -91,7 +70,6 @@
         android:id="@+id/textView42"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="72dp"
         android:text="RS 500.00"
         android:textColor="@color/design_default_color_primary_variant"
         android:textSize="20sp"
@@ -99,7 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.643"
         app:layout_constraintStart_toEndOf="@+id/textView38"
-        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
 
     <TextView
         android:id="@+id/textView43"
@@ -274,12 +252,12 @@
         android:id="@+id/button13"
         android:layout_width="54dp"
         android:layout_height="50dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/filer"
         app:layout_constraintBottom_toTopOf="@+id/textView42"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView37"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarHistory" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

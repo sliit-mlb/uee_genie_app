@@ -3,9 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/main_menu"
-        android:icon="@drawable/white_menu"
-        android:title="@string/action_menu"
+        android:id="@+id/toolSettings"
+        android:icon="@drawable/ic_settings_white_30"
+        android:title="@string/toolbarSettings"
         app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/toolMore"
+        android:icon="@drawable/ic_more_white_30"
+        android:title="@string/toolbarMore"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/toolHistory"
+                android:title="@string/toolbarHistory"
+                android:icon="@drawable/ic_history_white_30"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/toolLogout"
+                android:title="@string/toolbarLogout"
+                android:icon="@drawable/ic_logout"
+                app:showAsAction="never"/>
+        </menu>
+
+    </item>
 
 </menu>

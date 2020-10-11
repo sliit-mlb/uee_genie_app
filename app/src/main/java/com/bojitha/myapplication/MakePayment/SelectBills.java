@@ -13,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.bojitha.myapplication.Common.Settings;
+import com.bojitha.myapplication.Home.Billers;
 import com.bojitha.myapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -66,6 +68,30 @@ public class SelectBills extends AppCompatActivity {
         items.add(new Item(R.drawable.dialog_logo, "My Dialog Mobile", "0748523245"));
         items.add(new Item(R.drawable.ceb_logo, "My Home Elec Bill", "100120150160"));
         items.add(new Item(R.drawable.water_logo, "Water Bill", "8832145897"));
-        items.add(new Item(R.drawable.dialog_logo, "Father Dialog", "0746885522"));
+        items.add(new Item(R.drawable.mobitel_logo, "My Mobitel", "0706885522"));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_items, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.toolSettings){
+            Intent settings = new Intent(SelectBills.this, Settings.class);
+            startActivity(settings);
+            return true;
+        }else if(item.getItemId() == R.id.toolLogout){
+            Intent signin = new Intent(SelectBills.this, com.bojitha.myapplication.signin.class);
+            startActivity(signin);
+            return true;
+        }else if(item.getItemId() == R.id.toolHistory){
+            Intent history = new Intent(SelectBills.this, com.bojitha.myapplication.Purchase.history.class);
+            startActivity(history);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

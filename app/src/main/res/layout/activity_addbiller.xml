@@ -7,6 +7,10 @@
     android:background="#FFFFFF"
     tools:context=".billertype.addbiller">
 
+    <include
+        android:id="@+id/toolbarAddBiller"
+        layout="@layout/tool_bar"/>
+
     <Button
         android:id="@+id/button9"
         android:layout_width="227dp"
@@ -105,37 +109,6 @@
         app:layout_constraintVertical_bias="0.217" />
 
     <TextView
-        android:id="@+id/textView42"
-        android:layout_width="414dp"
-        android:layout_height="62dp"
-        android:layout_gravity="center"
-        android:autoText="false"
-        android:background="#1e5c2b"
-        android:gravity="center_vertical"
-        android:text="        GENIE"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/imageButton35"
-        android:layout_width="38dp"
-        android:layout_height="42dp"
-        android:tint="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@android:drawable/ic_notification_clear_all" />
-
-    <TextView
         android:id="@+id/textView45"
         android:layout_width="match_parent"
         android:layout_height="58dp"
@@ -144,10 +117,9 @@
         android:text="  ADD BILLER"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAddBiller" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -160,18 +132,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365"
         app:srcCompat="@drawable/capture12334" />
-
-    <ImageButton
-        android:id="@+id/imageButton37"
-        android:layout_width="38dp"
-        android:layout_height="42dp"
-        android:tint="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@android:drawable/ic_menu_agenda" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

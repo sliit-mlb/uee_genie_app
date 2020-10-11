@@ -10,11 +10,15 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.bojitha.myapplication.Common.Settings;
+import com.bojitha.myapplication.Home.Billers;
 import com.bojitha.myapplication.Home.Home;
 import com.bojitha.myapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -83,5 +87,29 @@ public class ConfirmBill extends AppCompatActivity {
     private void initItemsData(){
         itemList = new ArrayList<>(1);
         itemList.add(new Item(R.drawable.atm_card, "My Commercial Card", "2534 2547 3256 2541"));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_items, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.toolSettings){
+            Intent settings = new Intent(ConfirmBill.this, Settings.class);
+            startActivity(settings);
+            return true;
+        }else if(item.getItemId() == R.id.toolLogout){
+            Intent signin = new Intent(ConfirmBill.this, com.bojitha.myapplication.signin.class);
+            startActivity(signin);
+            return true;
+        }else if(item.getItemId() == R.id.toolHistory){
+            Intent history = new Intent(ConfirmBill.this, com.bojitha.myapplication.Purchase.history.class);
+            startActivity(history);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

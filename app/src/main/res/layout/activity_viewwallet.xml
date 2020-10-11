@@ -6,19 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Purchase.viewwallet">
 
-    <TextView
-        android:id="@+id/textView63"
-        android:layout_width="442dp"
-        android:layout_height="59dp"
-        android:background="#1e5c2b"
-        android:text="                     Wallet"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/toolbarViewWallet"
+        layout="@layout/tool_bar"/>
 
     <TextView
         android:id="@+id/textView64"
@@ -32,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarViewWallet" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -272,17 +262,6 @@
         app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/textView76" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="39dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/textView63"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton55"

@@ -6,20 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Purchase.filer">
 
-    <TextView
-        android:id="@+id/textView53"
-        android:layout_width="442dp"
-        android:layout_height="59dp"
-
-        android:background="#1e5c2b"
-        android:text="                 HISTORY"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/toolbarFiler"
+        layout="@layout/tool_bar"/>
 
     <TextView
         android:id="@+id/textView56"
@@ -31,9 +20,8 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbarFiler" />
 
     <TextView
         android:id="@+id/textView57"

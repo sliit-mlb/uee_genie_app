@@ -29,6 +29,10 @@
     <string name="sampleNumber">0775651247</string>
     <string name="selectWallet">Select a wallet</string>
 
+    <string name="toolbarSettings">Settings</string>
+    <string name="toolbarMore">More</string>
+    <string name="toolbarHistory">History</string>
+    <string name="toolbarLogout">Logout</string>
 
     <string name="action_settings">Settings</string>
 </resources>

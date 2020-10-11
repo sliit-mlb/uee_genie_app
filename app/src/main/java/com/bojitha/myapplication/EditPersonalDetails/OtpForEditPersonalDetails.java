@@ -7,15 +7,19 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.bojitha.myapplication.Common.Settings;
 import com.bojitha.myapplication.Home.Home;
 import com.bojitha.myapplication.MakePayment.ConfirmBill;
 import com.bojitha.myapplication.R;
+import com.bojitha.myapplication.billertype.billertypehome;
 
 public class OtpForEditPersonalDetails extends AppCompatActivity {
 
@@ -43,7 +47,7 @@ public class OtpForEditPersonalDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"Update Cancel",Toast.LENGTH_SHORT).show();
-                Intent home = new Intent(OtpForEditPersonalDetails.this, Home.class);
+                Intent home = new Intent(OtpForEditPersonalDetails.this, Settings.class);
                 startActivity(home);
             }
         });
@@ -61,7 +65,7 @@ public class OtpForEditPersonalDetails extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             Toast.makeText(getApplicationContext(), "Personal Details Updated", Toast.LENGTH_LONG).show();
-                            Intent home = new Intent(OtpForEditPersonalDetails.this, Home.class);
+                            Intent home = new Intent(OtpForEditPersonalDetails.this, Settings.class);
                             startActivity(home);
                         }
                     };
@@ -71,5 +75,29 @@ public class OtpForEditPersonalDetails extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_items, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.toolSettings){
+            Intent settings = new Intent(OtpForEditPersonalDetails.this, Settings.class);
+            startActivity(settings);
+            return true;
+        }else if(item.getItemId() == R.id.toolLogout){
+            Intent signin = new Intent(OtpForEditPersonalDetails.this, com.bojitha.myapplication.signin.class);
+            startActivity(signin);
+            return true;
+        }else if(item.getItemId() == R.id.toolHistory){
+            Intent history = new Intent(OtpForEditPersonalDetails.this, com.bojitha.myapplication.Purchase.history.class);
+            startActivity(history);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
